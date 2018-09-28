@@ -5,10 +5,21 @@
  */
 package persistencia.dao;
 
+import dominio.Solicitud;
+import java.util.List;
+
 /**
  *
  * @author itmanager
  */
-public class SolicitudDAO {
+public interface SolicitudDAO {
+    
+     public boolean createNota(Solicitud solicitud);//Crear 
+
+    public List<Solicitud> getAllNota(); //Consultar
+
+    public boolean deleteNota(Solicitud solicitud); // Eliminar
+
+    public boolean updateNota(Solicitud solicitud); //Actualizar
     
 }

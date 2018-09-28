@@ -9,6 +9,6 @@ package persistencia.dao;
  *
  * @author itmanager
  */
-public class UsuarioDAO {
+public interface UsuarioDAO {
     
 }

@@ -9,6 +9,20 @@ package dominio;
  *
  * @author itmanager
  */
-public class Solicitud {
+public class Solicitud extends SolicitudDTO {
+    
+    
+    public void ingresar(SolicitudDTO solicitud) {
+        this.setDescripcion(solicitud.getDescripcion());
+    }
+
+    public void modificar(SolicitudDTO solicitud) {
+        this.setDescripcion(solicitud.getDescripcion());
+    }
+
+    public void eliminar(SolicitudDTO solicitud) {
+        this.setDescripcion("");
+    }
+    
     
 }
